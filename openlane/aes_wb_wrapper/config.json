@@ -1,0 +1,35 @@
+{
+    "DESIGN_NAME": "aes_wb_wrapper",
+    "PDN_MULTILAYER": false,
+    "CLOCK_PORT": "wb_clk_i",
+    "CLOCK_PERIOD": 25,
+    "VERILOG_FILES": [
+        "dir::../../../secworks_aes/src/rtl/*.v",
+        "dir::../../verilog/rtl/aes_wb_wrapper.v"
+    ],
+    "FP_CORE_UTIL": 40,
+    "RT_MAX_LAYER": "met4",
+    "SYNTH_STRATEGY": "DELAY 4",
+    "DEFAULT_CORNER": "max_ss_100C_1v60",
+    "RUN_POST_GRT_DESIGN_REPAIR": true,
+    "PNR_SDC_FILE": "dir::pnr.sdc",
+    "SIGNOFF_SDC_FILE": "dir::signoff.sdc",
+    "MAX_TRANSITION_CONSTRAINT": 1.5,
+    "DESIGN_REPAIR_MAX_SLEW_PCT": 30,
+    "DESIGN_REPAIR_MAX_CAP_PCT": 30,
+    "IO_PIN_ORDER_CFG": "dir::pin_order.cfg",
+   
+"RUN_HEURISTIC_DIODE_INSERTION": true,
+"GRT_ANTENNA_REPAIR_MARGIN": 15,
+"GRT_ANTENNA_REPAIR_ITERS": 10, 
+    
+    
+"RUN_POST_GRT_RESIZER_TIMING": true,
+"GRT_RESIZER_HOLD_SLACK_MARGIN": 0.13,
+"GRT_RESIZER_ALLOW_SETUP_VIOS": true,
+"RUN_TAP_ENDCAP_INSERTION": true
+
+
+
+ 
+}
